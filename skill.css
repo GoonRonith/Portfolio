@@ -1,0 +1,888 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+      background: var(--second-bg-color);
+      color:var(--text-color);
+     
+    }
+    
+    :root {
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+    }
+    .upper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+        color: whitesmoke;
+        margin-top: 10px;
+        /* border: 2px solid red; */
+    }
+    
+    .up-name{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px; 
+    }
+    .up-name span{
+        animation: neon 2s ease infinite; 
+    }
+
+    .res-menu{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .res-menu div{
+        padding: 10px;
+      }
+    .up-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* border: 2px solid red; */
+    }
+    
+    .up-nav div{
+        /* border: 2px solid green; */
+        margin: 10px;
+    }
+    .up-nav a{
+        /* border: 2px solid green; */
+       color: whitesmoke;
+       text-decoration: none;
+    }
+    
+    .res-menu div:hover{
+        /* border: 2px solid green; */
+       cursor: pointer;
+       color:var(--main-color);
+    }
+    
+    .up-nav a:hover{
+        /* border: 2px solid green; */
+       cursor: pointer;
+       color:var(--main-color);
+    }
+
+    .menu-icon{
+        display: none;
+    }
+    .cross{
+        display: none;
+    }
+
+    .text-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+        margin-top: 25px;
+    }
+    .text-div .journey{
+       margin-left: 10px;
+       /* border: 2px solid red; */
+       
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+       font-size: 55px;
+       color: #00abf0;
+    }
+    .text-div .my{
+       
+        /* border: 2px solid red; */
+       
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-size: 55px;
+     }
+
+
+     .line-div{
+         /* border: 2px solid red; */
+         display: flex;
+         justify-content: space-around;
+     }
+
+     .fwks{
+      display: none;
+     }
+
+     .w1{
+        /* border: 2px solid red; */
+        height: 30px;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     .w2{
+        height: 30px;
+        width: 15%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     .container-div{
+        /* border: 2px solid gold; */
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-around;
+     }
+
+     .container-div .box1{
+        border: 2px solid #00abf0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+        height: 680px;
+        border-radius: 15px;
+        overflow: auto;
+        
+     }
+
+     .round1,.round2,.round3{
+        /* border: 2px solid blueviolet; */
+        height: 80px;
+        width: 100%;
+     }
+
+     .container-div .box1 .code-txt{
+      
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        width: 90%;
+        /* border: 2px solid black; */
+        margin-top: 5px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 10px;
+     } 
+
+     .bar{
+        border: 2px solid #00abf0;
+        height: 30px;
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 15px;
+        border-radius: 30px;
+     }
+
+/* 
+     .sub{
+        border: 2px solid yellowgreen;
+        margin-top: 0px;
+        margin-left: 5px;
+        height: 50px;
+
+     } */
+
+     .html{
+      /* border: 2px solid yellowgreen; */
+      margin-top: 0px;
+      margin-left: 10px;
+      height: 50px;
+     }
+
+     .html img{
+      width: 50px;
+      height: 80px;
+      padding-bottom: 30px;
+     }
+
+
+     .css{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .css img{
+      /* border: 2px solid red; */
+      width: 75px;
+      height: 75px;
+      padding-bottom: 30px;
+     margin-right: 20px;
+     }
+
+     .js{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .js img{
+      /* border: 2px solid red; */
+      width: 65px;
+      height: 65px;
+      padding-bottom: 30px;
+     margin-right: 20px;
+     margin-top: 10px;
+     }
+     .java{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .java img{
+      /* border: 2px solid red; */
+      width: 69px;
+      height: 75px;
+      padding-bottom: 40px;
+     margin-right: 20px;
+     margin-top: 7px;
+     }
+
+     .py{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .py img{
+      /* border: 2px solid red; */
+      width: 50px;
+      height: 65px;
+      padding-bottom: 30px;
+ 
+     margin-top: 7px;
+     margin-left: 8px;
+     }
+
+     .php{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .php img{
+      /* border: 2px solid red; */
+      width: 80px;
+      height: 70px;
+      padding-bottom: 30px;
+     margin-right: 10px;
+     margin-top: 7px;
+     }
+
+     .c{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .c img{
+      /* border: 2px solid red; */
+      width: 60px;
+      height: 70px;
+      padding-bottom: 30px;
+     margin-right: 10px;
+     margin-top: 7px;
+     }
+
+     .cpp{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .cpp img{
+      /* border: 2px solid red; */
+      width: 70px;
+      height: 70px;
+      padding-bottom: 30px;
+     margin-right: 20px;
+     margin-top: 5px;
+     }
+
+
+     .node{
+      /* border: 2px solid yellowgreen; */
+      width: 90px;
+      height: 110px;
+     }
+     .node img{
+      /* border: 2px solid red; */
+      width: 90px;
+      height: 50px;
+     margin-bottom: 20px;
+     }
+
+     .boot{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .boot img{
+      /* border: 2px solid red; */
+      width: 50px;
+      height: 70px;
+      padding-bottom: 30px;
+     margin-left: 10px;
+     margin-top: 5px;
+     }
+
+     .bootstrap{
+      /* border: 2px solid yellowgreen; */
+      margin-left: 0px;
+      width: 90px;
+      height: 80px;
+     }
+     .bootstrap img{
+      
+      width: 60px;
+      height: 80px;
+      padding-bottom: 30px;
+     margin-left: 10px;
+     margin-top: 0px;
+     }
+
+     .tb{
+ 
+   margin-top: 20px;
+   margin-left: 10px;
+     }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     .know{
+        /* border: 2px solid yellowgreen; */
+        margin-top: 15px;
+        margin-right: 5px;
+     }
+
+     .round1 .bar .bar-percentage{
+        border: 2px solid #00abf0;
+        height: 15px;
+        width: 80%;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        background-color: #00abf0;
+        animation: openFromRight80 2s forwards;
+     } 
+     
+   @keyframes openFromRight80 {
+    0% {
+        width: 0%;
+    }
+    80% {
+        width: 80%;
+    }
+}
+
+   .round2 .bar .bar-percentage{
+        border: 2px solid #00abf0;
+        height: 15px;
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        background-color: #00abf0;
+     animation: openFromRight50 2s forwards;
+     }
+
+   
+ @keyframes openFromRight50 {
+  0% {
+      width: 0%;
+  }
+  50% {
+      width: 50%;
+  }
+}
+
+     .round3 .bar .bar-percentage{
+        border: 2px solid #00abf0;
+        height: 15px;
+        width: 60%;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        background-color: #00abf0;
+     animation: openFromRight60 2s forwards;
+     }
+
+   
+ @keyframes openFromRight60 {
+  0% {
+      width: 0%;
+  }
+  60% {
+      width: 60%;
+  }
+}
+
+
+
+
+
+     .round4 .bar .bar-percentage{
+        border: 2px solid #00abf0;
+        height: 15px;
+        width: 80%;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        background-color: #00abf0;
+        animation: openFromRight80 2s forwards;
+     } 
+
+     .round5 .bar .bar-percentage{
+        border: 2px solid #00abf0;
+        height: 15px;
+        width: 70%;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        background-color: #00abf0;
+     animation: openFromRight70 2s forwards;
+     }
+
+   
+ @keyframes openFromRight70 {
+  0% {
+      width: 0%;
+  }
+  70% {
+      width: 70%;
+  }
+}
+
+
+
+     .round6 .bar .bar-percentage{
+        border: 2px solid #00abf0;
+        height: 15px;
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 5px;
+        border-radius: 30px;
+        background-color: #00abf0;
+        animation: openFromRight50 2s forwards;
+     } 
+
+     .round7 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 80%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+      animation: openFromRight80 2s forwards;
+   } 
+   .round8 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 80%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+      animation: openFromRight80 2s forwards;
+   } 
+
+   .round9 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 70%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+      animation: openFromRight70 2s forwards;
+   } 
+
+   .round10 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 75%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+   animation: openFromRight75 2s forwards;
+}
+
+
+@keyframes openFromRight75 {
+0% {
+ width: 0%;
+}
+75% {
+ width: 75%;
+}
+}
+
+   .round11 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 70%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+      animation: openFromRight70 2s forwards;
+   } 
+
+
+
+   .container-div .box2 .code-txt{
+      
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 90%;
+      /* border: 2px solid black; */
+      margin-top: 5px;
+      color: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 10px;
+   } 
+
+   .cov-div{
+      /* border: 2px solid #00abf0; */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 30%;
+      height: 620px;
+      border-radius: 15px;
+      overflow: auto;
+   }
+
+   .container-div  .cov-div .box2{
+      border: 2px solid #00abf0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height:280px;
+      border-radius: 15px;
+      overflow: auto;
+      
+   }
+
+   .cov-div .box3{
+      margin-top:5px;
+      width: 100%;
+      height: 250px;
+      border: 2px solid #00abf0;
+      border-radius: 15px;
+   }
+
+   .cov-div .other{
+      /* border: 2px solid red; */
+      margin-top: 50px;
+      font-size: 22px;
+      color: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+
+   .container-div .box3 .code-txt{
+      
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 90%;
+      /* border: 2px solid black; */
+      margin-top: 5px;
+      color: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 10px;
+   } 
+
+
+   .round12 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 60%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+      animation: openFromRight60 2s forwards;
+   } 
+
+   .round13 .bar .bar-percentage{
+      border: 2px solid #00abf0;
+      height: 15px;
+      width: 60%;
+      margin-top: 5px;
+      margin-left: 5px;
+      border-radius: 30px;
+      background-color: #00abf0;
+      animation: openFromRight60 2s forwards;
+   } 
+
+
+   @media(min-width:420px) and (max-width:1600px){
+      .line-div .w1{
+         /* border: 2px solid red; */
+         width: 23%;
+        
+      }
+   }
+
+   @media(max-width:414px){
+      .up-nav{
+          display: none;
+      }
+
+      .upper{
+          width: 355px;
+          
+          justify-content: space-between;
+          /* height: 0px; */
+      }
+      .up-name{
+          font-size: 20px;
+          padding-left: 10px;
+         }
+         .menu-icon{
+      
+          display: block;
+          justify-content: flex-end;
+          /* margin-right: 10px; */
+          font-size: 35px; 
+         
+      }
+
+      .res-menu{
+          position: absolute;
+          top: 25px;
+          left: 0px;
+          z-index: 1; /* Lower z-index to be below div1 */
+          background-color:#112e42 ;
+      }
+
+      .res-menu{
+         margin-top: 20px;
+         /* border: 2px solid red; */
+         width: 100%;
+         font-size: 20px;
+         /* position: absolute; */
+         top: 5%;
+         /* right: 0; */
+         animation: openFromRight 1s forwards;
+        }
+ 
+        @keyframes openFromRight {
+         0% {
+             width: 0;
+         }
+         100% {
+             width: 100%;
+         }
+     }
+         .res-menu a{
+          /* border: 2px solid green; */
+         color: whitesmoke;
+         text-decoration: none;
+      }
+
+      .cross{
+          font-size: 35px;
+      }
+
+      .text-div{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         /* border: 2px solid red; */
+         margin-top: 10px;
+     }
+     .text-div .journey{
+        margin-left: 10px;
+        /* border: 2px solid red; */
+
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-size: 35px;
+        color: #00abf0;
+     }
+     .text-div .my{
+        
+         /* border: 2px solid red; */
+        
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+         font-size: 35px;
+      }
+
+      .line-div{
+         /* border: 2px solid red; */
+         display: flex;
+         justify-content: flex-start;
+         margin-top: 5px;
+     }
+
+     .w1{
+        /* border: 2px solid red; */
+        height: 30px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     .w2{
+        height: 30px;
+        width: 50%;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     .container-div{
+      /* border: 2px solid gold; */
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+   }
+
+   .container-div .box1{
+      border: 2px solid #00abf0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 90%;
+      height: 670px;
+      border-radius: 15px;
+      overflow: auto;
+      
+   }
+
+   .round1,.round2,.round3{
+      /* border: 2px solid red; */
+      height: 80px;
+      width: 100%;
+   }
+
+   .container-div .box1 .code-txt{
+    
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 90%;
+      /* border: 2px solid black; */
+      margin-top: 5px;
+      color: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 10px;
+   }
+
+
+   .container-div .box2 .code-txt{
+      
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 90%;
+      /* border: 2px solid black; */
+      margin-top: 5px;
+      color: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 10px;
+   } 
+
+   
+   .cov-div{
+      /* border: 2px solid greenyellow; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 620px;
+      border-radius: 15px;
+      overflow: auto;
+   }
+
+   .container-div  .cov-div .box2{
+      margin-top: 5px;
+      border: 2px solid #00abf0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 90%;
+      height:280px;
+      border-radius: 15px;
+      overflow: auto;
+      
+   }
+
+   .cov-div .box3{
+      margin-top:5px;
+      width: 90%;
+      height: 200px;
+      border: 2px solid #00abf0;
+      border-radius: 15px;
+   }
+
+   .cov-div .other{
+      /* border: 2px solid red; */
+      margin-top: 50px;
+      font-size: 22px;
+      color: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+ .w2{
+   display: none;
+ }
+
+ .fwks{
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: flex-start;
+   width: 90%;
+   font-size: 22px;
+   color: whitesmoke;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+
+   }

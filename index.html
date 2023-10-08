@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="upper">
+        <div class="up-name">
+            <div class="coderimg-div"><img src="images/coder.png"></div>
+            <span class="typing">CODER.</span>
+        </div>
+        <div class="up-nav">
+            <div class="home" ><a href="index.html">Home</a></div>
+            <div class="about"><a href="about.html">About</a></div>
+            <div class="education"><a href="education.html">Education</a></div>
+            <div class="skills"><a href="skills.html">Skills</a></div>
+            <div class="projects"><a href="projects.html">Projects</a></div>
+            
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa fa-bars"  aria-hidden="true" onclick="menuOpen()"></i>  
+        </div>
+        <div class="cross" id="cross"> <i class="fa fa-times" aria-hidden="true" onclick="menuClose()"></i></div>
+    </div>
+
+    <div class="res-menu" id="res-menu">
+        <div class="home" ><a href="index.html">Home</a></div>
+        <div class="about"><a href="about.html">About</a></div>
+        <div class="education"><a href="education.html">Education</a></div>
+            <div class="skills"><a href="skills.html">Skills</a></div>
+            <div class="projects"><a href="projects.html">Projects</a></div>
+    </div>
+
+    <div class="txt-div">
+        <div class="txt-cont">
+        <div class="txt">
+            <p id="p1">Hi,I'm Ronith Goon</p>
+            <p id="p2">Backend Developer</p>
+        </div>
+        <div class="info" id="info">
+            Hello guys, I am a Computer Science student and i have completed my Computer Science Honours degree from Culcutta University.I love
+            to build server-side logic and infrastructure that powers web applications and services.
+            My primary focus is on creating robust, scalable, and efficient backend systems that enable the frontend to deliver a seamless user experience. 
+        </div>
+
+        <div class="buttons">
+            <div class="hire"><button class="hm" onclick="formOpen()">Hire Me</button></div>
+            <div class="talk"><button class="cv"><a href="CV.pdf">Download CV</a></button></div>
+        </div>
+    </div>
+
+
+    <div class="form-div" id="form-div">
+        <form name="submit-to-google-sheet">
+            <div class="close"> <i class="fa fa-times" aria-hidden="true" onclick="formClose()"></i></div>
+            <input type="text" placeholder="Your Name" name="Name">
+            <input type="text" placeholder="Your Email" name="Email">
+            <textarea type="text" placeholder="Your message" name="Message"></textarea>
+            <button>Hire</button>
+        </form>
+      <span id="suc-msg"></span>
+    </div> 
+
+
+
+
+    <div class="image-div">
+        <div class="round-div">
+            <img src="images/m10.png" alt="">
+        </div>
+        
+    </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="fb "><a href="https://www.facebook.com/ronith.goon?mibextid=9R9pXO"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+        <div class="insta "><a href="https://instagram.com/ronithgoon?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        <div class="git "><a href="https://github.com/GoonRonith"><i class="fa fa-github-square" aria-hidden="true"></i></a></div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzsXjRH0he_WBYDAHQpKMHrdqlMUBqRBSQo8O78pMCv71ZXdYyu2RQFewly02bOgMnlvw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        let msg=document.getElementById('suc-msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML='Message sent successfully!'
+                setTimeout(()=>{
+                    msg.innerHTML=''
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+            
+        })
+      </script>
+</body>
+</html>
